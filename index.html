@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Sena</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <a href="https://www.instagram.com/guilhermelimadev/" target="_blank"><img id="gui" src="gui.png"><h3>Desafiado Por:</h3></img></a>
+    <a href="https://brasilescola.uol.com.br/matematica/chances-ganhar-na-mega-sena.htm" target="_blank"><img id="trevo" src="trevo.png"></img></a>
+    <div class="titulo">
+        <h1>Mega Sena do Gui</h1>
+        <br>
+        <h2>Escolha Seus Numeros <br>(1 a 60)</h2>
+    </div>
+
+    <div class="listaMaquina">
+        <ul id="listaMaquina">
+            <li id="maquina1">?</li>
+            <li id="maquina2">?</li>
+            <li id="maquina3">?</li>
+            <li id="maquina4">?</li>
+            <li id="maquina5">?</li>
+            <li id="maquina6">?</li>
+        </ul>
+    </div>
+    <div class="escolha">
+        <input type="text" id="escolha" placeholder="Escolha Um Número" ></input>
+        <button id="botao" onclick="botao()">Apagar Última Escolha</button>
+    </div>
+    <div class="listaEscolha">
+        <ul id="listaEscolha">
+            <li id="escolha1"></li>
+            <li id="escolha2"></li>
+            <li id="escolha3"></li>
+            <li id="escolha4"></li>
+            <li id="escolha5"></li>
+            <li id="escolha6"></li>
+        </ul>
+    </div>
+    <p id="fim"></p>
+</body>
+<script src="script.js"></script>
+</html>
