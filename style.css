@@ -2,12 +2,17 @@ body {
     background-color: #2bb17c;
 }
 
-li  {
+li {
     display: inline-block;
-    }
+}
 
-#maquina1 , #maquina2 , #maquina3 , #maquina4 , #maquina5 ,#maquina6 {
-    background-clip:padding-box;
+#maquina1,
+#maquina2,
+#maquina3,
+#maquina4,
+#maquina5,
+#maquina6 {
+    background-clip: padding-box;
     background-color: gold;
     width: 50px;
     height: 50px;
@@ -48,7 +53,7 @@ input {
 }
 
 #trevo {
-    zoom:0.032;
+    zoom: 0.032;
     position: absolute;
     top: 150px;
     left: 150px;
@@ -58,14 +63,14 @@ p {
     font-size: 26px;
     color: black;
     text-align: center;
-    margin-top:50px;
+    margin-top: 50px;
 }
 
 #gui {
     position: absolute;
     width: 60px;
     height: 60px;
-    top:50px;
+    top: 50px;
     right: 10px;
 }
 
