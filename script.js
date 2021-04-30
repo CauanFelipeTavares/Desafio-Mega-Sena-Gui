@@ -47,8 +47,14 @@ escolha.addEventListener('keyup', function (e) {
             }
           }
         }
+        if(acertos == 1){
+          var acertosHTML = "Voce teve um total de 1 acerto"
+          document.getElementById('fim').innerHTML = acertosHTML
+        }
+        else{
         var acertosHTML = "Voce teve um total de " + acertos + " acertos"
         document.getElementById('fim').innerHTML = acertosHTML
+        }
       }
     }
   }
@@ -73,6 +79,14 @@ function sorteio() {
     if (numerosMaquina.indexOf(escolhaMaquina) == -1)
       numerosMaquina.push(escolhaMaquina);
   }
+  //função pra colocar os números em ordem crescente
+  //peguei da internet, mas entendi a funcionalidade
+  //...mais ou menos
+  numerosMaquina.sort((a,b) => {
+    if (a > b) return 1;
+    if (a < b) return -1;
+    return 0
+  })
 }
 
 //tudo foi feito com lógica de funções básicas + pesquisa na internet, sei que poderia ser mais fácil com alguns outros conhecimentos e técnicas, mas sou iniciante. Obrigado por visitar meu código
